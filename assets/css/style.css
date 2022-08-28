@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+body {
+    font-family: 'Great vibes', sans-serif;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+    'header header header header'
+    'aside section section section'
+    'footer footer footer footer';
+    grid-template-columns: 215px auto auto auto;
+    grid-template-rows: 60px auto 50px;
+}
+
+/*HEADER*/
+
+header {
+    grid-area: header;
+    background-color: #DAA520;
+    color: white;
+    position: sticky;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/*ASIDE BAR*/
+
+aside {
+    grid-area: aside;
+    background-color: #F0E68C;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+aside > div {
+    line-height: 15px;
+    padding: 15px 10px;
+}
+
+aside > div:nth-child(1) h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: math;
+}
+
+aside > div:nth-child(2) p:hover {
+    color:#B8860B;
+    cursor: pointer;
+}
+
+.destacado {
+    color: #B8860B;
+    font-size: 22px;
+}
+
+/*SECCIÓN DE PRODUCTOS*/
+
+section {
+    grid-area: section;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 20px;
+    background-color:antiquewhite;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+
+section article > div:nth-child(1) img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+section article > div:nth-child(2) p {
+    line-height: 30px;
+    font-size: 22px;
+}
+
+section article > div:nth-child(3) {
+    background-color:#B8860B;
+    cursor: pointer;
+    width: 100%; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+section article > div:nth-child(3) a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+section article > div:nth-child(3) a:hover {
+    color:black;
+}
+
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    background-color:#DAA520;
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
